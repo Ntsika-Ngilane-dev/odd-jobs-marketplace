@@ -30,7 +30,7 @@ export default function PostJobPage() {
               </div>
               <CardTitle className="text-2xl">Job Posted Successfully!</CardTitle>
               <CardDescription>
-                Your job has been posted and workers can now apply. You'll be notified when someone applies.
+                Your job has been posted and workers can now apply. You&apos;ll be notified when someone applies.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">

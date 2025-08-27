@@ -115,7 +115,7 @@ export default function SignupPage() {
               >
                 <Briefcase className="w-6 h-6" />
                 <div className="text-left">
-                  <div className="font-semibold">I'm an Employer</div>
+                  <div className="font-semibold">I&apos;m an Employer</div>
                   <div className="text-sm text-muted-foreground">I want to hire workers</div>
                 </div>
               </Button>
@@ -126,7 +126,7 @@ export default function SignupPage() {
               >
                 <Users className="w-6 h-6" />
                 <div className="text-left">
-                  <div className="font-semibold">I'm a Worker</div>
+                  <div className="font-semibold">I&apos;m a Worker</div>
                   <div className="text-sm text-muted-foreground">I want to find work</div>
                 </div>
               </Button>

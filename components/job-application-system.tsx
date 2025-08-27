@@ -252,13 +252,13 @@ export function JobApplicationSystem({
                 </div>
                 <h3 className="font-semibold text-green-600 mb-2">Application Submitted</h3>
                 <p className="text-muted-foreground">
-                  You've already applied for this job. The employer will review your application and get back to you.
+                  You&apos;ve already applied for this job. The employer will review your application and get back to you.
                 </p>
               </div>
             ) : job.status === "posted" ? (
               <div className="space-y-4">
                 <p className="text-muted-foreground">
-                  Submit a proposal to apply for this job. Make sure to highlight your relevant experience and explain why you're the right fit.
+                  Submit a proposal to apply for this job. Make sure to highlight your relevant experience and explain why you&apos;re the right fit.
                 </p>
                 
                 <Dialog open={isApplying} onOpenChange={setIsApplying}>

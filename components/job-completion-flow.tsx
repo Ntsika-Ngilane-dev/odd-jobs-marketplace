@@ -94,7 +94,7 @@ export function JobCompletionFlow({
       <Card>
         <CardHeader>
           <CardTitle>Mark Job as Done</CardTitle>
-          <CardDescription>Let the employer know you've completed the work</CardDescription>
+          <CardDescription>Let the employer know you&apos;ve completed the work</CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="bg-muted/50 p-4 rounded-lg">
