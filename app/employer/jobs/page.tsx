@@ -178,7 +178,7 @@ function EmployerJobsContent() {
 
             {showFilters && (
               <div className="mt-4 pt-4 border-t border-border">
-                <JobFilters onFilterChange={handleFilter} userRole="employer" />
+                <JobFilters onFiltersChange={handleFilter} userRole="employer" />
               </div>
             )}
           </CardContent>

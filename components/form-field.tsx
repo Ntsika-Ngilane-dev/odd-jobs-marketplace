@@ -16,6 +16,7 @@ interface BaseFieldProps {
 }
 
 interface InputFieldProps extends BaseFieldProps {
+  id?: string
   type?: "text" | "email" | "password" | "number" | "tel" | "url" | "date" | "time"
   placeholder?: string
   value?: string | number
@@ -24,6 +25,7 @@ interface InputFieldProps extends BaseFieldProps {
 }
 
 interface TextareaFieldProps extends BaseFieldProps {
+  id?: string
   placeholder?: string
   value?: string
   onChange?: (value: string) => void

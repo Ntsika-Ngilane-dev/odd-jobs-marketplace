@@ -102,7 +102,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-          cd /path/to/your/app
+          cd ~/odd-jobs-marketplace
           docker-compose pull
           docker-compose up -d
           docker system prune -f

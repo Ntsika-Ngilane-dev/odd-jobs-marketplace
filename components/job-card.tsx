@@ -13,9 +13,10 @@ interface JobCardProps {
   onViewDetails: (job: Job) => void
   onApply?: (job: Job) => void
   onEdit?: (job: Job) => void
+  onDelete?: (job: Job) => void
 }
 
-export function JobCard({ job, userRole, onViewDetails, onApply, onEdit }: JobCardProps) {
+export function JobCard({ job, userRole, onViewDetails, onApply, onEdit, onDelete }: JobCardProps) {
   const category = JOB_CATEGORIES[job.category]
 
   const getStatusColor = (status: string) => {

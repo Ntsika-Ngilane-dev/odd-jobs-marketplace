@@ -70,6 +70,35 @@ export interface User {
   rating: number
   completedJobs: number
   createdAt: Date
+  bankName?: string
+  accountNumber?: string
+  accountHolder?: string
+  reviews?: Array<{
+    id: string
+    rating: number
+    comment: string
+    jobId: string
+    reviewerId: string
+    createdAt: Date
+  }>
+}
+
+export interface JobCompletion {
+  id: string
+  jobId: string
+  workerId: string
+  employerId: string
+  completedAt: Date
+  workerNotes?: string
+  employerNotes?: string
+  photos?: string[]
+  rating?: {
+    employer: number
+    worker: number
+  }
+  status: "pending-review" | "approved" | "disputed"
+  workerConfirmed?: boolean
+  employerConfirmed?: boolean
 }
 
 export const JOB_CATEGORIES: Record<JobCategory, { label: string; icon: string; description: string }> = {

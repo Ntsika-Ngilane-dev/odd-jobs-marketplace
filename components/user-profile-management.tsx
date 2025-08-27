@@ -51,9 +51,11 @@ interface UserProfile extends UserType {
     id: string
     rating: number
     comment: string
-    reviewerName: string
-    jobTitle: string
-    date: Date
+    jobId: string
+    reviewerId: string
+    createdAt: Date
+    reviewerName?: string
+    jobTitle?: string
   }[]
   certifications?: {
     id: string
@@ -145,7 +147,7 @@ export function UserProfileManagement({
     return Math.round((completedFields / fields.length) * 100)
   }
 
-  const averageRating = user.reviews?.reduce((sum, review) => sum + review.rating, 0) / (user.reviews?.length || 1) || 0
+  const averageRating = user.reviews?.length ? user.reviews.reduce((sum, review) => sum + review.rating, 0) / user.reviews.length : 0
 
   return (
     <div className="space-y-6">
@@ -437,7 +439,7 @@ export function UserProfileManagement({
                             year: "numeric",
                             month: "short",
                             day: "numeric",
-                          }).format(review.date)}
+                          }).format(review.createdAt)}
                         </span>
                       </div>
                       <p className="text-sm">{review.comment}</p>
