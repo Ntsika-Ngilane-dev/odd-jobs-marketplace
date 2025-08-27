@@ -58,10 +58,6 @@ export default function RegisterPage() {
         password: formData.password,
         phone: formData.phone,
         role: formData.role as "employer" | "worker",
-        profilePhoto: undefined,
-        verified: false,
-        rating: 0,
-        completedJobs: 0,
         bankName: formData.bankName || undefined,
         accountNumber: formData.accountNumber || undefined,
         accountHolder: formData.accountHolder || undefined
