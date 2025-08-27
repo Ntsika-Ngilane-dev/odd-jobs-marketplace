@@ -90,8 +90,8 @@ jobs:
         context: .
         push: true
         tags: |
-          ${{ secrets.DOCKER_USERNAME }}/odd-jobs-marketplace:latest
-          ${{ secrets.DOCKER_USERNAME }}/odd-jobs-marketplace:${{ github.sha }}
+          workngilane/odd-jobs-marketplace:latest
+          workngilane/odd-jobs-marketplace:${{ github.sha }}
         cache-from: type=gha
         cache-to: type=gha,mode=max
 
